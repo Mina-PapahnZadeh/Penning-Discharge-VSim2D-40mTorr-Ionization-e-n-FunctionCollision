@@ -1,0 +1,1531 @@
+<SDFfile PenningDischargeSq>
+  <Tab Visualize>
+    <attribs>
+    <OpenedAnalysisTools TAB0>
+      <options>
+      annotationLevel = 2
+      timeSliderPosition = 0
+      </options>
+      <attribs>
+      <AnalysisTool History>
+        <options>
+        fft0Checked = 0
+        fft1Checked = 0
+        fft2Checked = 0
+        fft3Checked = 0
+        </options>
+        <attribs>
+        <Plot Graph 1>
+          <options>
+          locationIndex = 0
+          colorIndex = 0
+          styleIndex = 0
+          </options>
+          <strings>
+          curveName = "numPhysPtcls1"
+          </strings>
+        </Plot>
+        <Plot Graph 2>
+          <options>
+          locationIndex = 0
+          colorIndex = 1
+          styleIndex = 1
+          </options>
+          <strings>
+          curveName = "numPhysPtcls0"
+          </strings>
+        </Plot>
+        <Plot Graph 3>
+          <options>
+          locationIndex = 2
+          colorIndex = 2
+          styleIndex = 0
+          </options>
+          <strings>
+          curveName = "None"
+          </strings>
+        </Plot>
+        <Plot Graph 4>
+          <options>
+          locationIndex = 3
+          colorIndex = 3
+          styleIndex = 0
+          </options>
+          <strings>
+          curveName = "None"
+          </strings>
+        </Plot>
+        </attribs>
+      </AnalysisTool>
+      </attribs>
+    </OpenedAnalysisTools>
+    <OpenedAnalysisTools TAB1>
+      <options>
+      annotationLevel = 2
+      timeSliderPosition = 0
+      </options>
+      <attribs>
+      <AnalysisTool History>
+        <options>
+        fft0Checked = 0
+        fft1Checked = 0
+        fft2Checked = 0
+        fft3Checked = 0
+        </options>
+        <attribs>
+        <Plot Graph 1>
+          <options>
+          locationIndex = 0
+          colorIndex = 0
+          styleIndex = 0
+          </options>
+          <strings>
+          curveName = "numPhysPtcls1"
+          </strings>
+        </Plot>
+        <Plot Graph 2>
+          <options>
+          locationIndex = 0
+          colorIndex = 1
+          styleIndex = 1
+          </options>
+          <strings>
+          curveName = "numPhysPtcls0"
+          </strings>
+        </Plot>
+        <Plot Graph 3>
+          <options>
+          locationIndex = 2
+          colorIndex = 2
+          styleIndex = 0
+          </options>
+          <strings>
+          curveName = "None"
+          </strings>
+        </Plot>
+        <Plot Graph 4>
+          <options>
+          locationIndex = 3
+          colorIndex = 3
+          styleIndex = 0
+          </options>
+          <strings>
+          curveName = "None"
+          </strings>
+        </Plot>
+        </attribs>
+      </AnalysisTool>
+      </attribs>
+    </OpenedAnalysisTools>
+    <OpenedAnalysisTools TAB2>
+      <options>
+      annotationLevel = 2
+      timeSliderPosition = 0
+      </options>
+      <attribs>
+      <AnalysisTool History>
+        <options>
+        fft0Checked = 0
+        fft1Checked = 0
+        fft2Checked = 0
+        fft3Checked = 0
+        </options>
+        <attribs>
+        <Plot Graph 1>
+          <options>
+          locationIndex = 0
+          colorIndex = 0
+          styleIndex = 0
+          </options>
+          <strings>
+          curveName = "numPhysPtcls1"
+          </strings>
+        </Plot>
+        <Plot Graph 2>
+          <options>
+          locationIndex = 0
+          colorIndex = 1
+          styleIndex = 1
+          </options>
+          <strings>
+          curveName = "numPhysPtcls0"
+          </strings>
+        </Plot>
+        <Plot Graph 3>
+          <options>
+          locationIndex = 2
+          colorIndex = 2
+          styleIndex = 0
+          </options>
+          <strings>
+          curveName = "None"
+          </strings>
+        </Plot>
+        <Plot Graph 4>
+          <options>
+          locationIndex = 3
+          colorIndex = 3
+          styleIndex = 0
+          </options>
+          <strings>
+          curveName = "None"
+          </strings>
+        </Plot>
+        <VisItWindow window0>
+        </VisItWindow>
+        </attribs>
+      </AnalysisTool>
+      </attribs>
+    </OpenedAnalysisTools>
+    </attribs>
+  </Tab>
+  <Tab Setup>
+    <Node root>
+      <strings>
+      kind = "Set"
+      </strings>
+      <attribs>
+      <TxHierAttribSet hiddenProps>
+      </TxHierAttribSet>
+      </attribs>
+      <SubItems items>
+        <AttribLeaf Description>
+          <strings>
+          short description = "Drifting Electrons"
+          description = "Transport of electrons through a neutral gas with an electric field."
+          long description = "Transport of electrons through a neutral gas with an electric field.  The electrons are accelerated by the electric field but lose momentum to the neutral gas, leading to heating and a steady drift."
+          image = ""
+          thumbnail = "driftingElectronsTn.png"
+          version = "10.1"
+          </strings>
+          <attribs>
+          <TxHierAttribSet hiddenProps>
+          </TxHierAttribSet>
+          </attribs>
+        </AttribLeaf>
+        <Set Constants>
+          <attribs>
+          <TxHierAttribSet hiddenProps>
+          </TxHierAttribSet>
+          </attribs>
+          <SubItems items>
+            <Constant PI>
+              <params>
+              value = 3.14159265358980e+00
+              </params>
+              <strings>
+              kind = "PI (built-in)"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                isEstablished = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </Constant>
+            <Constant PIO2>
+              <params>
+              value = 1.57079632679490e+00
+              </params>
+              <strings>
+              kind = "PIO2 (built-in)"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                isEstablished = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </Constant>
+            <Constant TWOPI>
+              <params>
+              value = 6.28318530717960e+00
+              </params>
+              <strings>
+              kind = "TWOPI (built-in)"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                isEstablished = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </Constant>
+            <Constant LIGHTSPEED>
+              <params>
+              value = 2.99792458000000e+08
+              </params>
+              <strings>
+              kind = "LIGHTSPEED (built-in)"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                isEstablished = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </Constant>
+            <Constant MU0>
+              <params>
+              value = 1.25663706143590e-06
+              </params>
+              <strings>
+              kind = "MU0 (built-in)"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                isEstablished = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </Constant>
+            <Constant ELEMCHARGE>
+              <params>
+              value = 1.60217648700000e-19
+              </params>
+              <strings>
+              kind = "ELEMCHARGE (built-in)"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                isEstablished = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </Constant>
+            <Constant ELECMASS>
+              <params>
+              value = 9.10938215000000e-31
+              </params>
+              <strings>
+              kind = "ELECMASS (built-in)"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                isEstablished = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </Constant>
+            <Constant PROTMASS>
+              <params>
+              value = 1.67262163700000e-27
+              </params>
+              <strings>
+              kind = "PROTMASS (built-in)"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                isEstablished = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </Constant>
+            <Constant MUONMASS>
+              <params>
+              value = 1.88353130000000e-28
+              </params>
+              <strings>
+              kind = "MUONMASS (built-in)"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                isEstablished = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </Constant>
+            <Constant KB>
+              <params>
+              value = 1.38065040000000e-23
+              </params>
+              <strings>
+              kind = "KB (built-in)"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                isEstablished = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </Constant>
+            <Constant EPSILON0>
+              <params>
+              value = 8.85418700000000e-12
+              </params>
+              <strings>
+              kind = "EPSILON0 (built-in)"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                isEstablished = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </Constant>
+            <Constant C2>
+              <params>
+              value = 8.98755179000000e+16
+              </params>
+              <strings>
+              kind = "C2 (built-in)"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                isEstablished = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </Constant>
+            <Constant ELECCHARGE>
+              <params>
+              value = -1.60217648700000e-19
+              </params>
+              <strings>
+              kind = "ELECCHARGE (built-in)"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                isEstablished = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </Constant>
+            <Constant ELECMASSEV>
+              <params>
+              value = 5.10998909847640e+05
+              </params>
+              <strings>
+              kind = "ELECMASSEV (built-in)"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                isEstablished = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </Constant>
+            <Constant GAS_DENSITY>
+              <params>
+              value = 1.28527000000000e+21
+              </params>
+              <strings>
+              kind = "User Defined"
+              description = ""
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+              </TxHierAttribSet>
+              </attribs>
+            </Constant>
+            <Constant XLENGTH>
+              <params>
+              value = 3.00000000000000e-02
+              </params>
+              <strings>
+              kind = "User Defined"
+              description = ""
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+              </TxHierAttribSet>
+              </attribs>
+            </Constant>
+            <Constant NX>
+              <params>
+              value = 2.50000000000000e+02
+              </params>
+              <strings>
+              kind = "User Defined"
+              description = ""
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+              </TxHierAttribSet>
+              </attribs>
+            </Constant>
+            <Constant ELEC_DENSITY>
+              <params>
+              value = 0.00000000000000e+00
+              </params>
+              <strings>
+              kind = "User Defined"
+              description = ""
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+              </TxHierAttribSet>
+              </attribs>
+            </Constant>
+            <Constant YLENGTH>
+              <params>
+              value = 3.00000000000000e-02
+              </params>
+              <strings>
+              kind = "User Defined"
+              description = ""
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+              </TxHierAttribSet>
+              </attribs>
+            </Constant>
+            <Constant NY>
+              <params>
+              value = 2.50000000000000e+02
+              </params>
+              <strings>
+              kind = "User Defined"
+              description = ""
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+              </TxHierAttribSet>
+              </attribs>
+            </Constant>
+            <Constant B0>
+              <params>
+              value = 1.50000000000000e-02
+              </params>
+              <strings>
+              kind = "User Defined"
+              description = ""
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+              </TxHierAttribSet>
+              </attribs>
+            </Constant>
+          </SubItems>
+        </Set>
+        <Set Parameters>
+          <attribs>
+          <TxHierAttribSet hiddenProps>
+          </TxHierAttribSet>
+          </attribs>
+        </Set>
+        <AttribLeaf Basic Settings>
+          <options>
+          number of steps = 5000000
+          steps between dumps = 5000
+          </options>
+          <strings>
+          surface meshing tolerance = "0.5"
+          cfl number = "0.95"
+          time step = "5e-12"
+          </strings>
+          <strvecs>
+          dump in groups of = ["1" "3"]
+          precision = ["double" "float"]
+          length unit = ["meter"]
+          use GPU (if found) = ["false"]
+          verbosity = ["information" "emergency" "alert" "critical" "error" "warning" "notice" "debug level 1" "debug level 2" "debug level 3"]
+          dimensionality = ["2" "3" "1"]
+          grid spacing = ["uniform"]
+          restore geometries = ["True" "False"]
+          MPI decomposition = ["default" "0 axis" "1 axis" "2 axis"]
+          </strvecs>
+          <attribs>
+          <coordinateSystem cartesian>
+          </coordinateSystem>
+          <fieldSolver electrostatic>
+            <options>
+            number of guard cells = 1
+            </options>
+          </fieldSolver>
+          <periodicDirections periodic z>
+          </periodicDirections>
+          <particles include particles>
+            <strings>
+            estimated max electron density = "ELEC_DENSITY"
+            estimated max electron temperature (eV) = "1.0"
+            </strings>
+            <strvecs>
+            dump nodal fields = ["True" "False"]
+            </strvecs>
+          </particles>
+          <collisionsFramework monte carlo>
+          </collisionsFramework>
+          <movingWindow no moving window>
+          </movingWindow>
+          <TxHierAttribSet hiddenProps>
+          </TxHierAttribSet>
+          </attribs>
+        </AttribLeaf>
+        <Set Functions>
+          <attribs>
+          <TxHierAttribSet hiddenProps>
+          </TxHierAttribSet>
+          </attribs>
+        </Set>
+        <Set SpaceTimeFunctions>
+          <attribs>
+          <TxHierAttribSet hiddenProps>
+          </TxHierAttribSet>
+          </attribs>
+          <SubItems items>
+            <SpaceTimeFunction IonizationF>
+              <strings>
+              kind = "User Defined"
+              description = "This is deprecated.  Use Expression."
+              expression = "(1.7155e-18*ln(0.0634*x)*((x-15.76)/sqr(x)))*(H(x-15.76)-H(x-79))+(2.648e-18*ln(0.0344*x)*((x-15.76)/sqr(x)))*(H(x-79))"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+              </TxHierAttribSet>
+              </attribs>
+            </SpaceTimeFunction>
+            <SpaceTimeFunction elasticF>
+              <strings>
+              kind = "User Defined"
+              description = "This is deprecated.  Use Expression."
+              expression = "(H(x)-H(x-0.2))*10^(-(19+x/0.11))+(H(x-0.2))*(9.07*10^(-19)*x^1.55*(x+70)^1.1)/(14+x)^3.25"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+              </TxHierAttribSet>
+              </attribs>
+            </SpaceTimeFunction>
+            <SpaceTimeFunction Excitation>
+              <strings>
+              kind = "User Defined"
+              description = "This is deprecated.  Use Expression."
+              expression = "(H(x-12))*(3.85116*1e-19*ln(x/3.4015)-4.85227*1e-19)/x"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+              </TxHierAttribSet>
+              </attribs>
+            </SpaceTimeFunction>
+          </SubItems>
+        </Set>
+        <Set Materials>
+          <attribs>
+          <TxHierAttribSet hiddenProps>
+          </TxHierAttribSet>
+          </attribs>
+        </Set>
+        <Set Geometries>
+          <attribs>
+          <TxHierAttribSet hiddenProps>
+          </TxHierAttribSet>
+          </attribs>
+          <SubItems items>
+            <CSG CSG>
+              <params>
+              tessellation = 1.00000000000000e-02
+              </params>
+              <strings>
+              kind = "Construction Group"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                visibility = 1
+                isEstablished = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </CSG>
+          </SubItems>
+        </Set>
+        <Set Grids>
+          <attribs>
+          <TxHierAttribSet hiddenProps>
+          </TxHierAttribSet>
+          </attribs>
+          <SubItems items>
+            <Grid Grid>
+              <strings>
+              kind = "UniCart2D"
+              xMin = "0.0"
+              xMax = "XLENGTH"
+              yMin = "0.0"
+              yMax = "YLENGTH"
+              xCells = "NX"
+              yCells = "NY"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                visibility = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+              <SubItems items>
+                <Geom plane>
+                  <strings>
+                  kind = "GridFace"
+                  </strings>
+                  <attribs>
+                  <TxHierAttribSet hiddenProps>
+                    <options>
+                    visibility = 1
+                    </options>
+                    <params>
+                    scale = 1.00000000000000e+00
+                    </params>
+                  </TxHierAttribSet>
+                  </attribs>
+                </Geom>
+              </SubItems>
+            </Grid>
+          </SubItems>
+        </Set>
+        <Set Field Dynamics>
+          <attribs>
+          <TxHierAttribSet hiddenProps>
+            <options>
+            required = 1
+            </options>
+          </TxHierAttribSet>
+          </attribs>
+          <SubItems items>
+            <Fields Fields>
+              <strings>
+              kind = "Field Group"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                isEstablished = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+              <SubItems items>
+                <Field Phi>
+                  <strings>
+                  kind = "Phi"
+                  </strings>
+                  <attribs>
+                  <TxHierAttribSet hiddenProps>
+                    <options>
+                    isEstablished = 1
+                    required = 1
+                    </options>
+                  </TxHierAttribSet>
+                  </attribs>
+                </Field>
+                <Field Charge Density>
+                  <strings>
+                  kind = "Charge Density"
+                  </strings>
+                  <attribs>
+                  <TxHierAttribSet hiddenProps>
+                    <options>
+                    isEstablished = 1
+                    required = 1
+                    </options>
+                  </TxHierAttribSet>
+                  </attribs>
+                </Field>
+                <Field Electric Field>
+                  <strings>
+                  kind = "Electric Field"
+                  </strings>
+                  <attribs>
+                  <TxHierAttribSet hiddenProps>
+                    <options>
+                    isEstablished = 1
+                    required = 1
+                    </options>
+                  </TxHierAttribSet>
+                  </attribs>
+                </Field>
+                <Field Magnetic Field>
+                  <strings>
+                  kind = "Magnetic Field"
+                  </strings>
+                  <attribs>
+                  <TxHierAttribSet hiddenProps>
+                    <options>
+                    isEstablished = 1
+                    required = 0
+                    </options>
+                  </TxHierAttribSet>
+                  </attribs>
+                </Field>
+                <Field BackgroundB>
+                  <strings>
+                  kind = "External Field"
+                  description = ""
+                  </strings>
+                  <attribs>
+                  <fieldType magnetic>
+                  </fieldType>
+                  <FieldSpecification function defined>
+                    <strings>
+                    description = ""
+                    component 0 = "0.0"
+                    component 1 = "0.0"
+                    component 2 = "B0"
+                    </strings>
+                    <strvecs>
+                    time dependent = ["False" "True"]
+                    </strvecs>
+                  </FieldSpecification>
+                  <TxHierAttribSet hiddenProps>
+                    <options>
+                    required = 1
+                    </options>
+                  </TxHierAttribSet>
+                  </attribs>
+                </Field>
+              </SubItems>
+            </Fields>
+            <FieldBoundaryConditions FieldBoundaryConditions>
+              <strings>
+              kind = "Field Boundary Condition Group"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                isEstablished = 1
+                required = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+              <SubItems items>
+                <FieldBoundaryCondition dirichlet1>
+                  <strings>
+                  kind = "Dirichlet"
+                  description = ""
+                  value = "0.0"
+                  </strings>
+                  <attribs>
+                  <boundarySurface "lower y ">
+                  </boundarySurface>
+                  <TxHierAttribSet hiddenProps>
+                    <options>
+                    required = 1
+                    </options>
+                  </TxHierAttribSet>
+                  </attribs>
+                </FieldBoundaryCondition>
+                <FieldBoundaryCondition dirichlet2>
+                  <strings>
+                  kind = "Dirichlet"
+                  description = ""
+                  value = "0.0"
+                  </strings>
+                  <attribs>
+                  <boundarySurface "upper y ">
+                  </boundarySurface>
+                  <TxHierAttribSet hiddenProps>
+                    <options>
+                    required = 1
+                    </options>
+                  </TxHierAttribSet>
+                  </attribs>
+                </FieldBoundaryCondition>
+                <FieldBoundaryCondition dirichlet0>
+                  <strings>
+                  kind = "Dirichlet"
+                  description = ""
+                  value = "0.0"
+                  </strings>
+                  <attribs>
+                  <boundarySurface "lower x ">
+                  </boundarySurface>
+                  <TxHierAttribSet hiddenProps>
+                    <options>
+                    required = 1
+                    </options>
+                  </TxHierAttribSet>
+                  </attribs>
+                </FieldBoundaryCondition>
+                <FieldBoundaryCondition dirichlet3>
+                  <strings>
+                  kind = "Dirichlet"
+                  description = ""
+                  value = "0.0"
+                  </strings>
+                  <attribs>
+                  <boundarySurface "upper x ">
+                  </boundarySurface>
+                  <TxHierAttribSet hiddenProps>
+                    <options>
+                    required = 1
+                    </options>
+                  </TxHierAttribSet>
+                  </attribs>
+                </FieldBoundaryCondition>
+              </SubItems>
+            </FieldBoundaryConditions>
+            <CurrentDistributions CurrentDistributions>
+              <strings>
+              kind = "Current Distributions Group"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                isEstablished = 1
+                required = 0
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </CurrentDistributions>
+            <RCSBox RCSBox>
+              <strings>
+              kind = "RCS Box"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                isEstablished = 1
+                required = 0
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </RCSBox>
+            <PoissonSolver PoissonSolver>
+              <strings>
+              kind = "Poisson Solver"
+              relative permittivity = "1.0"
+              </strings>
+              <attribs>
+              <Solver generalized minimal residual>
+                <options>
+                max iterations = 200
+                Krylov vector space size = 30
+                </options>
+                <params>
+                tolerance = 1.00000000000000e-08
+                </params>
+                <strvecs>
+                convergence metric = ["r0" "rhs" "Anorm" "noscaled" "sol"]
+                orthogonalization = ["classic" "modified"]
+                </strvecs>
+              </Solver>
+              <Preconditioner multigrid>
+                <options>
+                maximum levels = 10
+                smoother sweeps = 3
+                </options>
+                <params>
+                damping factor = 1.33300000000000e+00
+                threshold = 0.00000000000000e+00
+                </params>
+                <strvecs>
+                mg defaults = ["DD" "SA" "DD-ML" "Maxwell"]
+                smoother type = ["Gauss Seidel" "Chebyshev" "symmetric variable block Gauss Seidel" "Jacobi" "Aztec"]
+                when to smooth = ["both" "before" "after"]
+                coarse type = ["Jacobi" "KLU"]
+                increase or decrease = ["increasing" "decreasing"]
+                </strvecs>
+              </Preconditioner>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                isEstablished = 1
+                required = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </PoissonSolver>
+          </SubItems>
+        </Set>
+        <Set Particle Dynamics>
+          <attribs>
+          <TxHierAttribSet hiddenProps>
+            <options>
+            required = 1
+            </options>
+          </TxHierAttribSet>
+          </attribs>
+          <SubItems items>
+            <KineticParticles KineticParticles>
+              <strings>
+              kind = "Kinetic Particles Group"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                isEstablished = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+              <SubItems items>
+                <ParticleSpecies electrons>
+                  <strings>
+                  kind = "Electrons"
+                  nominal density = "ELEC_DENSITY"
+                  </strings>
+                  <attribs>
+                  <particleWeights constant weights>
+                  </particleWeights>
+                  <particleDynamics non-relativistic>
+                  </particleDynamics>
+                  <weightSetting explicitly set weights>
+                    <strings>
+                    particles per macroparticle = "1.70235e7"
+                    </strings>
+                  </weightSetting>
+                  <TxHierAttribSet hiddenProps>
+                  </TxHierAttribSet>
+                  </attribs>
+                  <SubItems items>
+                    <ParticleLoader particleLoader0>
+                      <strings>
+                      kind = "Particle Loader"
+                      description = ""
+                      </strings>
+                      <attribs>
+                      <loadDensity relative density>
+                        <strings>
+                        relative density = "0.00045"
+                        </strings>
+                      </loadDensity>
+                      <particleLoadPlacement grid>
+                        <optvecs>
+                        macro particles per direction = [1 1 1]
+                        </optvecs>
+                      </particleLoadPlacement>
+                      <loadDuration repeat loading>
+                        <strings>
+                        start time = "0.0"
+                        stop time = "3.40282e+038"
+                        </strings>
+                        <strvecs>
+                        load after initialization = ["true" "false"]
+                        load upon shift = ["true" "false"]
+                        </strvecs>
+                      </loadDuration>
+                      <velocityDistribution functional velocity>
+                        <strings>
+                        u0 = "0.0"
+                        u1 = "0.0"
+                        u2 = "0.805e6"
+                        </strings>
+                      </velocityDistribution>
+                      <volume cartesian 3d slab>
+                        <strings>
+                        xMin = "0.012"
+                        xMax = "0.018"
+                        yMin = "0.012"
+                        yMax = "0.018"
+                        zMin = "0.0"
+                        zMax = "0.0"
+                        </strings>
+                      </volume>
+                      <TxHierAttribSet hiddenProps>
+                        <options>
+                        visibility = 1
+                        </options>
+                      </TxHierAttribSet>
+                      </attribs>
+                    </ParticleLoader>
+                  </SubItems>
+                </ParticleSpecies>
+                <ParticleSpecies Ions>
+                  <strings>
+                  kind = "Charged Particles"
+                  nominal density = "ELEC_DENSITY"
+                  description = ""
+                  </strings>
+                  <attribs>
+                  <particleDynamics non-relativistic>
+                  </particleDynamics>
+                  <particleWeights constant weights>
+                  </particleWeights>
+                  <weightSetting explicitly set weights>
+                    <strings>
+                    particles per macroparticle = "1.70235e7"
+                    </strings>
+                  </weightSetting>
+                  <molecule Ar+>
+                    <strings>
+                    mass [amu] = "39.9479"
+                    charge number = "1"
+                    ionization energy [eV] = "27.62967"
+                    </strings>
+                  </molecule>
+                  <TxHierAttribSet hiddenProps>
+                  </TxHierAttribSet>
+                  </attribs>
+                </ParticleSpecies>
+              </SubItems>
+            </KineticParticles>
+            <Fluids Fluids>
+              <strings>
+              kind = "Fluids Group"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                isEstablished = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+              <SubItems items>
+                <Fluid neutralFluidAr>
+                  <strings>
+                  kind = "Neutral Fluid"
+                  fluid temperature (K) = "300."
+                  </strings>
+                  <attribs>
+                  <molecule Ar>
+                    <strings>
+                    mass [amu] = "39.948"
+                    ionization energy [eV] = "15.76"
+                    </strings>
+                  </molecule>
+                  <volume cartesian 3d slab>
+                    <strings>
+                    xMin = "0.0"
+                    xMax = "XLENGTH"
+                    yMin = "0.0"
+                    yMax = "YLENGTH"
+                    zMin = "0.0"
+                    zMax = "0.0"
+                    </strings>
+                  </volume>
+                  <fluidDensity constant fluid density>
+                    <strings>
+                    density = "GAS_DENSITY"
+                    </strings>
+                  </fluidDensity>
+                  <TxHierAttribSet hiddenProps>
+                    <options>
+                    visibility = 1
+                    </options>
+                  </TxHierAttribSet>
+                  </attribs>
+                </Fluid>
+              </SubItems>
+            </Fluids>
+            <Collisions ReducedCollisions>
+              <strings>
+              kind = "Reduced"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                isEstablished = 1
+                required = 0
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+              <SubItems items>
+                <ParticleFluidCollisions electronNeutralFluidCollisions>
+                  <strings>
+                  kind = "Electron Neutral Fluid Collisions"
+                  neutral fluid = "neutralFluidAr"
+                  impact particles = "electrons"
+                  </strings>
+                  <attribs>
+                  <TxHierAttribSet hiddenProps>
+                    <options>
+                    required = 0
+                    </options>
+                  </TxHierAttribSet>
+                  </attribs>
+                  <SubItems items>
+                    <CollisionProcess electronNeutralFluidIonization0>
+                      <strings>
+                      kind = "Ionization"
+                      product electrons = "electrons"
+                      product ions = "Ions"
+                      </strings>
+                      <attribs>
+                      <crossSectionType user defined cross section>
+                        <strings>
+                        cross section data file = "collisionCS.dat"
+                        </strings>
+                      </crossSectionType>
+                      <productDistribution isotropic>
+                      </productDistribution>
+                      <TxHierAttribSet hiddenProps>
+                        <options>
+                        required = 0
+                        </options>
+                      </TxHierAttribSet>
+                      </attribs>
+                    </CollisionProcess>
+                  </SubItems>
+                </ParticleFluidCollisions>
+              </SubItems>
+            </Collisions>
+            <Collisions Reactions>
+              <strings>
+              kind = "Full"
+              description = "The full interactions group allow more sophisticated particle, fluid and field interactions in either the legacy Monte Carlo or Reactions framework"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                isEstablished = 1
+                required = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+              <SubItems items>
+                <InteractionType Particle Particle Collisions>
+                  <strings>
+                  kind = "Particle Particle Collisions"
+                  </strings>
+                  <attribs>
+                  <TxHierAttribSet hiddenProps>
+                    <options>
+                    isEstablished = 1
+                    </options>
+                  </TxHierAttribSet>
+                  </attribs>
+                </InteractionType>
+                <InteractionType Particle Fluid Collisions>
+                  <strings>
+                  kind = "Particle Fluid Collisions"
+                  </strings>
+                  <attribs>
+                  <TxHierAttribSet hiddenProps>
+                    <options>
+                    isEstablished = 1
+                    </options>
+                  </TxHierAttribSet>
+                  </attribs>
+                  <SubItems items>
+                    <CollisionType particleFluidImpactIonization0>
+                      <strings>
+                      kind = "Impact Ionization   "
+                      description = "A + B -> A+ + B + e"
+                      incoming particles = "electrons"
+                      incoming neutral fluid = "neutralFluidAr"
+                      outgoing electrons = "electrons"
+                      outgoing ions = "Ions"
+                      </strings>
+                      <attribs>
+                      <crossSectionType function>
+                        <strings>
+                        expression = "IonizationF"
+                        </strings>
+                        <strvecs>
+                        cross section variable = ["energy" "velocity"]
+                        </strvecs>
+                      </crossSectionType>
+                      <updatePeriodicity every timestep>
+                        <strings>
+                        update period = "1"
+                        </strings>
+                      </updatePeriodicity>
+                      <TxHierAttribSet hiddenProps>
+                        <options>
+                        required = 1
+                        </options>
+                      </TxHierAttribSet>
+                      </attribs>
+                    </CollisionType>
+                    <CollisionType impactExcitation0>
+                      <strings>
+                      kind = "Impact Excitation "
+                      description = " "
+                      incoming electrons = "electrons"
+                      incoming neutral fluid = "neutralFluidAr"
+                      excitation energy = "11.5"
+                      </strings>
+                      <attribs>
+                      <crossSectionType function>
+                        <strings>
+                        expression = "Excitation"
+                        </strings>
+                        <strvecs>
+                        cross section variable = ["energy" "velocity"]
+                        </strvecs>
+                      </crossSectionType>
+                      <TxHierAttribSet hiddenProps>
+                        <options>
+                        required = 1
+                        </options>
+                      </TxHierAttribSet>
+                      </attribs>
+                    </CollisionType>
+                    <CollisionType inelasticScattering0>
+                      <strings>
+                      kind = "Inelastic Scattering"
+                      description = " "
+                      incoming particles = "electrons"
+                      fluid = "neutralFluidAr"
+                      material mass = "6.6335209e-26"
+                      electron temperature fluid = "300.0"
+                      radiation length = "1.0"
+                      atomic ratio = "2.0"
+                      </strings>
+                      <strvecs>
+                      multiple scattering model = ["none" "ThomasFermi" "LenzJensen" "gaussian"]
+                      energy straggling = ["False" "True"]
+                      </strvecs>
+                      <attribs>
+                      <crossSectionType function>
+                        <strings>
+                        expression = "elasticF"
+                        </strings>
+                        <strvecs>
+                        cross section variable = ["energy" "velocity"]
+                        </strvecs>
+                      </crossSectionType>
+                      <TxHierAttribSet hiddenProps>
+                      </TxHierAttribSet>
+                      </attribs>
+                    </CollisionType>
+                  </SubItems>
+                </InteractionType>
+                <InteractionType Three Body Reactions>
+                  <strings>
+                  kind = "Three Body Reactions"
+                  </strings>
+                  <attribs>
+                  <TxHierAttribSet hiddenProps>
+                    <options>
+                    isEstablished = 1
+                    </options>
+                  </TxHierAttribSet>
+                  </attribs>
+                </InteractionType>
+                <InteractionType Field Ionization Processes>
+                  <strings>
+                  kind = "Field Ionization Processes"
+                  </strings>
+                  <attribs>
+                  <TxHierAttribSet hiddenProps>
+                    <options>
+                    isEstablished = 1
+                    </options>
+                  </TxHierAttribSet>
+                  </attribs>
+                </InteractionType>
+                <InteractionType Decay Processes>
+                  <strings>
+                  kind = "Decay Processes"
+                  </strings>
+                  <attribs>
+                  <TxHierAttribSet hiddenProps>
+                    <options>
+                    isEstablished = 1
+                    </options>
+                  </TxHierAttribSet>
+                  </attribs>
+                </InteractionType>
+              </SubItems>
+            </Collisions>
+          </SubItems>
+        </Set>
+        <Set Histories>
+          <attribs>
+          <TxHierAttribSet hiddenProps>
+            <options>
+            required = 1
+            </options>
+          </TxHierAttribSet>
+          </attribs>
+          <SubItems items>
+            <FieldHistory electricFieldEnergy0>
+              <strings>
+              kind = "Electric Field Energy"
+              description = ""
+              </strings>
+              <attribs>
+              <volume simulation region>
+              </volume>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                required = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </FieldHistory>
+            <ParticleHistory numMacroPtcls0>
+              <strings>
+              kind = "Number of Macroparticles"
+              description = ""
+              particles = "electrons"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                required = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </ParticleHistory>
+            <ParticleHistory particleEnergy0>
+              <strings>
+              kind = "Particle Energy"
+              description = ""
+              particles = "electrons"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                required = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </ParticleHistory>
+            <ParticleHistory numMacroPtcls1>
+              <strings>
+              kind = "Number of Macroparticles"
+              description = ""
+              particles = "Ions"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                required = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </ParticleHistory>
+            <ParticleHistory particleEnergy1>
+              <strings>
+              kind = "Particle Energy"
+              description = ""
+              particles = "Ions"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                required = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </ParticleHistory>
+            <ParticleHistory numPhysPtcls0>
+              <strings>
+              kind = "Number of Physical Particles"
+              description = ""
+              particles = "electrons"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                required = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </ParticleHistory>
+            <ParticleHistory numPhysPtcls1>
+              <strings>
+              kind = "Number of Physical Particles"
+              description = ""
+              particles = "Ions"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                required = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </ParticleHistory>
+            <ArrayHistory particleMomentum0>
+              <strings>
+              kind = "Particle Momentum"
+              description = ""
+              particles = "electrons"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                required = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </ArrayHistory>
+            <ArrayHistory particleMomentum1>
+              <strings>
+              kind = "Particle Momentum"
+              description = ""
+              particles = "Ions"
+              </strings>
+              <attribs>
+              <TxHierAttribSet hiddenProps>
+                <options>
+                required = 1
+                </options>
+              </TxHierAttribSet>
+              </attribs>
+            </ArrayHistory>
+          </SubItems>
+        </Set>
+      </SubItems>
+    </Node>
+    <UIState TreePropTab>
+      <attribs>
+      <View ThreeD>
+        <options>
+        defaultPerspectiveView = 1
+        defaultRenderScale = 0
+        perspectiveView = 1
+        renderScale = 0
+        </options>
+        <strings>
+        cameraPreset = "+z"
+        defaultCameraPreset = "+z"
+        defaultDrawMode = "View Solids"
+        drawMode = "View Solids"
+        </strings>
+        <attribs>
+        <Dialog VisProps>
+          <params>
+          defaultLineWidth = 1.00000000000000e+00
+          defaultPointSize = 1.00000000000000e+00
+          lineWidth = 1.00000000000000e+00
+          pointSize = 1.00000000000000e+00
+          </params>
+          <strings>
+          colorByProperty = "color"
+          defaultColorByProperty = "color"
+          defaultSelectionMode = "Select Solid"
+          selectionMode = "Select Solid"
+          </strings>
+        </Dialog>
+        </attribs>
+      </View>
+      </attribs>
+    </UIState>
+  </Tab>
+  <Tab Run>
+    <attribs>
+    <RunTime Parameters>
+      <strings>
+      dt = "5e-12"
+      dumpAtZero = "true"
+      dumpPeriodicity = "5000"
+      noCommunicationFiles = "false"
+      noParticleSorting = "false"
+      nsteps = "5000000"
+      restartDump = ""
+      userSpecified = ""
+      </strings>
+    </RunTime>
+    <RunTime Run Mode>
+      <strings>
+      numProcessors = "8"
+      otherMPIOptions = "--bind-to core"
+      runMethod = "CTK_MPI_RUN"
+      </strings>
+    </RunTime>
+    </attribs>
+  </Tab>
+  <Tab Analyze>
+    <attribs>
+    <OpenedAnalyzer TAB0>
+      <strings>
+      analyzerName = "addPtclComponentKEeV.py"
+      </strings>
+    </OpenedAnalyzer>
+    </attribs>
+  </Tab>
+</SDFfile>
