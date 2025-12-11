@@ -1,0 +1,235 @@
+#######################################################
+#
+# This PRE file,
+#   PenningDischargeSq.pre,
+# was generated from the simulation definition file,
+#   PenningDischargeSq.sdf,
+# by the VSim 11.0.0 build 37789 translator.
+# Any changes to this file will be lost if the
+# translator is rerun.
+#
+#######################################################
+
+#######################################################
+# User defined constants and parameters
+#######################################################
+
+$ import verbosity
+$ import mathphys
+
+$ GAS_DENSITY = 1.28527000000000e+21
+$ XLENGTH = 3.00000000000000e-02
+$ NX = 2.50000000000000e+02
+$ ELEC_DENSITY = 0.00000000000000e+00
+$ YLENGTH = 3.00000000000000e-02
+$ NY = 2.50000000000000e+02
+$ B0 = 1.50000000000000e-02
+
+#######################################################
+# Simulation definition from the basic settings
+#######################################################
+$ VPMW_DIELECTRIC_SHAPE_NAME_ARRAY = "" 
+$ VPMW_DIELECTRIC_SHAPE_BOUNDARY_NAME_ARRAY = "" 
+$ VPMW_DIELECTRIC_SHAPE_MATERIAL_ARRAY = "" 
+$ VPMW_PERMITTIVITIES_DICT = "" 
+
+$ VPMW_COORDINATE_SYSTEM = "cartesian"
+# cylindrical not found.
+$ VPMW_GRID_SPACING = "uniform"
+$ VPMW_NDIM = "2"
+$ VPMW_PRECISION = "double"
+$ VPMW_USE_GPU = "False"
+# electromagnetic not found.
+$ VPMW_SIMULATION_TYPE = "electrostatic"
+# magnetostatic not found.
+# no field solver not found.
+# prescribed fields not found.
+# electromagnetic.background permittivity not found.
+# electromagnetic.dielectric solver not found.
+$ VPMW_INCLUDE_PARTICLES = "True"
+$ VPMW_MAX_ELECTRON_DENSITY = "ELEC_DENSITY"
+# estimated min electron temperature (eV) not found.
+$ VPMW_MAX_ELECTRON_TEMP_EV = "1.0"
+$ VPMW_DUMP_NODAL_FIELDS = "True"
+# reduced not found.
+$ VPMW_COLLISIONS_FRAMEWORK = "monte carlo"
+# reactions not found.
+# reactions.collision order not found.
+$ VPMW_RESTORE_GRID_BNDRY = "True"
+$ VPMW_DECOMP = "default"
+$ VPM_PEC_NORMAL_INTERIOR = solid
+$ VPMW_TOP_LEVEL_VERBOSITY = VPM_INFO
+$ VPMW_GRID_TYPE = UniformCartesian
+
+#######################################################
+# Import needed system macros
+#######################################################
+
+$ import VSim
+
+#######################################################
+# User defined functions
+#######################################################
+
+
+#######################################################
+# User defined space-time functions
+#######################################################
+
+$ IonizationF = ((1.7155e-18*ln(0.0634*x)*((x-15.76)/sqr(x)))*(H(x-15.76)-H(x-79))+(2.648e-18*ln(0.0344*x)*((x-15.76)/sqr(x)))*(H(x-79)))
+$ elasticF = ((H(x)-H(x-0.2))*10**(-(19+x/0.11))+(H(x-0.2))*(9.07*10**(-19)*x**1.55*(x+70)**1.1)/(14+x)**3.25)
+$ Excitation = ((H(x-12))*(3.85116*1e-19*ln(x/3.4015)-4.85227*1e-19)/x)
+
+#######################################################
+#
+# Ordered blocks
+#
+#######################################################
+
+#######################################################
+# Translation of the grid
+#######################################################
+
+$ VPMW_NUM_GUARD_CELLS = 1
+$ VPMW_NUM_GUARD_CELLSP1 = 2
+$ VPMW_BGN0 = 0.00000000000000e+00
+$ VPMW_BGN1 = 0.00000000000000e+00
+
+$ VPMW_L0 = XLENGTH - 0.0
+$ VPMW_L1 = YLENGTH - 0.0
+
+$ VPMW_N0 = int(NX)
+$ VPMW_N1 = int(NY)
+
+# Derived grid variables.  Here for partial processing
+$ VPMW_UB0P1 = VPMW_N0 + 1
+$ VPMW_UB1P1 = VPMW_N1 + 1
+$ VPMW_UB2P1 = VPMW_N2 + 1
+$ VPMW_END0 = VPMW_BGN0 + VPMW_L0
+$ VPMW_END1 = VPMW_BGN1 + VPMW_L1
+$ VPMW_END2 = VPMW_BGN2 + VPMW_L2
+# Average cell sizes
+$ VPMW_DL0 = VPMW_L0/VPMW_N0
+$ VPMW_DL1 = VPMW_L1/VPMW_N1
+$ VPMW_DL2 = VPMW_L2/VPMW_N2
+$ VPMW_DLI0 = 1./VPMW_DL0
+$ VPMW_DLI1 = 1./VPMW_DL1
+$ VPMW_DLI2 = 1./VPMW_DL2
+$ VPMW_DLISQ = VPMW_DLI0**2 + (VPMW_NDIM>1)*VPMW_DLI1**2 + (VPMW_NDIM>2)*VPMW_DLI2**2
+$ VPMW_DLI = math.sqrt(VPMW_DLISQ)
+
+$ VPMW_PERIODIC_DIRS = [2]
+
+# Requires VPMW_N0[1,2], VPMW_L0[1,2], VPMW_BGN0[1,2]
+#
+# For UniformCartesian, defines:
+#     VPM_NX, VPM_NY, VPM_NZ, VPM_LX, VPM_LY, VPM_LZ,
+#     VPM_BGNX, VPM_BGNY, VPM_BGNZ,
+#     VPM_ENDX, VPM_ENDY, VPM_ENDZ,
+#     VPM_NXP1, VPM_NYP1, VPM_NZP1,
+#     VPM_NXM1, VPM_NYM1, VPM_NZM1,
+#     VPM_DX, VPM_DY, VPM_DZ,
+#     VPM_DXI, VPM_DYI, VPM_DZI,
+#     VPM_DL, VPM_DLI
+# For Cylindrical, defines:
+#     VPM_NZ, VPM_NR, VPM_NPHI, VPM_LZ, VPM_LR, VPM_LPHI,
+#     VPM_BGNR, VPM_BGNR, VPM_BGNPHI,
+#     VPM_ENDZ, VPM_ENDR, VPM_ENDPHI,
+#     VPM_NZP1, VPM_NRP1, VPM_NPHIP1,
+#     VPM_NZM1, VPM_NRM1, VPM_NPHIM1,
+#     VPM_DZ, VPM_DR, VPM_DPHI,
+#     VPM_DZI, VPM_DRI, VPM_DPHII,
+#     VPM_DL, VPM_DLI
+setGridData()
+
+
+#######################################################
+# Translation of the time group
+#######################################################
+
+$ VPMW_DMFRAC = "0.5"
+$ VPMW_CFL_NUMBER = "0.95"
+$ VPMW_DT = "5e-12"
+$ VPMW_NSTEPS = 5000000
+$ VPMW_DUMP_PERIOD = 5000
+$ VPMW_DUMP_GROUP_SIZE = "1"
+
+# Requires VPMW_SIMULATION_TYPE
+# For Electromagnetic:
+#   if VPMW_DT not defined
+#     Requires LIGHTSPEED, DLI
+#     Will calculate VPMW_DT based on CFL
+# For Electrostatic:
+#   Requires VPMW_MAX_ELECTRON_DENSITY, VPMW_MAX_ELECTRON_TEMP_EV
+setTimingData()
+
+#######################################################
+#
+# Unordered blocks
+#
+#######################################################
+addExternalField(BackgroundB, magnetic, functionDefined, 0.0, 0.0, B0, False)
+
+#######################################################
+# Translation of Boundary Conditions
+#######################################################
+
+addEsDirichletBC(dirichlet1, 0.0, lowerY)
+addEsDirichletBC(dirichlet2, 0.0, upperY)
+addEsDirichletBC(dirichlet0, 0.0, lowerX)
+addEsDirichletBC(dirichlet3, 0.0, upperX)
+
+#######################################################
+# Translation of Solver
+#######################################################
+
+addBaseSolver(gmres, 30, classic)
+addPreconditioner(multigrid, DD, 10, GaussSeidel, 3, both, Jacobi, 1.33300000000000e+00, 0.00000000000000e+00, increasing)
+# This writes preconditioner, so it must be last.
+addPoissonSolver(1.0, 200, 1.00000000000000e-08, r0)
+
+#######################################################
+# Translation of Particles
+#######################################################
+
+addParticleSpeciesLoader(particleLoader0, electrons, repeatLoading, 0.0, 3.40282e+038, true, true, relativeDensity, 0.00045, grid, [1, 1, 1], functionalVelocity, 0.0, 0.0, 0.805e6, [0.012, 0.012, 0.0], [0.018, 0.018, 0.0])
+addParticleSpecies(electrons, nonRelBoris, ELEC_DENSITY, constantWeights, explicitlySetWeights, 1.70235e7)
+addNodalExtrapNeed()
+
+addParticleSpecies(Ions, nonRelBoris, 1, 39.9479, 27.62967, ELEC_DENSITY, constantWeights, explicitlySetWeights, 1.70235e7)
+addNodalExtrapNeed()
+
+#######################################################
+# Translation of Fluids
+#######################################################
+
+addNeutralFluid(neutralFluidAr, Ar, 39.948, 15.76, GAS_DENSITY, 300., False, [0.0, 0.0, 0.0], [XLENGTH, YLENGTH, 0.0])
+addImpactIonizationPFMC(particleFluidImpactIonization0, electrons, neutralFluidAr, electrons, Ions, function, energy, IonizationF, 1)
+
+addImpactElasticMC(impactElastic1, electrons, neutralFluidAr, function, energy, elasticF, 1, 0)
+
+addImpactExcitationMC(impactExcitation0, electrons, neutralFluidAr, 11.5, function, energy, Excitation)
+
+
+#######################################################
+# Translation of Histories
+#######################################################
+
+addElectricFieldEnergyHistory(electricFieldEnergy0, simulationRegion)
+addMacroParticleCountHistory(numMacroPtcls0, electrons)
+addParticleEnergyHistory(particleEnergy0, electrons)
+addMacroParticleCountHistory(numMacroPtcls1, Ions)
+addParticleEnergyHistory(particleEnergy1, Ions)
+addPhysicalParticleCountHistory(numPhysPtcls0, electrons)
+addPhysicalParticleCountHistory(numPhysPtcls1, Ions)
+addParticleMomentumHistory(particleMomentum0, electrons)
+addParticleMomentumHistory(particleMomentum1, Ions)
+
+#######################################################
+#
+# Finalize
+#
+#######################################################
+
+finalize()
+
